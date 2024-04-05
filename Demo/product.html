@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <style>
+        /* Add your styles here */
+       /* Add your styles here */
+/* Add your styles here */
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #3c00a0;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: #3c00a0;
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjusted justify-content */
+    padding: 10px;
+    background-color: rgb(134, 155, 163);
+}
+
+.product-card {
+    width: calc(33% - 20px); /* 33.33% of the container width with some spacing */
+    margin-bottom: 20px;
+    border: 1px solid #0c0c0c;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-image {
+    max-width: 90%;
+    height: auto;
+}
+
+.btn-field button {
+    flex-basis: 48%;
+    background: #3c00a0;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.btn-field button.addToCart {
+    background: #28a745;  
+    border-radius: 10px;
+}
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="home">Home</a>
+        <a href="products">Products</a>
+        <a href="about">About</a>
+        <a href="contact">Contact</a>
+    </div>
+
+    <div class="product-container">
+        <div class="product-card">
+        <a href="https://www.amazon.in/Apple-Watch-Midnight-Aluminium-Sport/dp/B0BDK96RF2?&linkCode=sl1&tag=expressdeal07-21&linkId=460ed90ded51c05839962378fe63dbbd&language=en_IN&ref_=as_li_ss_tl">
+            <img class="product-image" src="p1.jpg" alt="Product 1">
+        </a>
+            <h3>Apple Watch</h3>
+            <p>The Apple Watch Series 9 is a versatile smartwatch with a Starlight Aluminum Case and sports loop.</p>
+            <p><b>Rs. 32,900</b></p>
+            <div class="btn-field">
+                <a type="submit" id="signupBtn" href="products_detail.html" class="btn-back">Details</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+        <a href="https://www.amazon.in/Noise-ColorFit-Smartwatch-Display-Monitors/dp/B097R3CN3Y?crid=PVGY9FC0VO9Q&keywords=best%2Bsmartwatch&qid=1684392038&refinements=p_36:1318504031&rnid=1318502031&s=electronics&sprefix=best%2Bsmartwatch%2B,aps,280&sr=1-12&th=1&linkCode=sl1&tag=jagrancom01-21&linkId=5dc2036f8400e30e87d5fd342520b6d6&language=en_IN&ref_=as_li_ss_tl">
+            <img class="product-image" src="p2.jpg" alt="Product 2"></a>
+            <h3>Noise smartwatch</h3>
+            <p>The Noise Diva Smartwatch offers a stylish design with a diamond-cut dial and glossy metallic finish, featuring an AMOLED display and multiple strap options</p>
+            <p><b>Rs 1,699</b></p>
+            <div class="btn-field">
+                <button type="submit" id="signupBtn">Add to Cart</button>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <a href="https://www.amazon.in/Fossil-Smartwatch-Digital-Black-Watch-FTW4060/dp/B0BH5ZV62F?&linkCode=sl1&tag=expressdeal07-21&linkId=0778d56a2c87b3faac458562566f1cbd&language=en_IN&ref_=as_li_ss_tl">
+            <img class="product-image" src="p9.jpg" alt="Product 2"></a>
+            <h3>Fossil</h3>
+            <p>Fossil smartwatches are the perfect combination of timeless design and futuristic technology.</p>
+            <p><b>Rs. 24,995</b></p>
+            <div class="btn-field">
+                <button type="submit" id="signupBtn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+        <a href="https://www.amazon.in/Amazfit-Version-Display-Monitor-Bluetooth/dp/B09ZYM6QG4?crid=1ICBUTP8MLFVH&keywords=amazfit+smartwatch&qid=1690272215&sprefix=amazfit+smartwatch,aps,272&sr=8-4&linkCode=sl1&tag=jagrancom02-21&linkId=e3ba0e12b3df1ca3047b2832ac8fcc05&language=en_IN&ref_=as_li_ss_tl">
+            <img class="product-image" src="p3.avif" alt="Product 2"></a>
+            <h3>Amazfit</h3>
+            <p>The Amazfit T-Rex 2 delivers outstanding performance with its 150+ sports modes, accurate GPS, and long-lasting battery life</p>
+            <p><b>Rs. 15,999</b></p>
+            <div class="btn-field">
+                <button type="submit" id="signupBtn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+        <a href="https://www.amazon.in/boAt-Display-Multiple-Monitoring-Charcoal/dp/B09MQSCJQ1?crid=1S8RTRH6IPQT8&keywords=smartwatch&qid=1681985149&s=electronics&sprefix=smartwatch,aps,230&sr=1-8&th=1&linkCode=sl1&tag=jagrancom01-21&linkId=69572dd4b790dff6718a02aef161ee42&language=en_IN&ref_=as_li_ss_tl">
+            <img class="product-image" src="p4.jpeg" alt="Product 2" width="300"></a>
+            <h3>boAt Smartwatch</h3>
+            <p>The Gadgets 360 Smartwatch Finder can help you take on the daunting task of finding the right smartwatch that suits your needs and budget.</p>
+            <p><b>Rs 2,299</b></p>
+            <div class="btn-field">
+                <button type="submit" id="signupBtn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+        <a href="https://www.amazon.in/Fastrack-Watchfaces-Multiple-Watchface-Resistance/dp/B0BB7KTHM4?crid=1S8RTRH6IPQT8&keywords=smartwatch&qid=1681983009&refinements=p_36:1318505031&rnid=1318502031&s=electronics&sprefix=smartwatch,aps,230&sr=1-7&th=1&linkCode=sl1&tag=jagrancom01-21&linkId=dca0439277f4399f2bd6ada3d9034e64&language=en_IN&ref_=as_li_ss_tl">
+            <img class="product-image" src="p5.jpg" alt="Product 2" width="400px" height="400px"></a>
+            <h3>Fastrack Reflex</h3>
+            <p>Fastrack Reflex offers various features that enhance your life and help you live an active lifestyle</p>
+            <p><b>Rs 6,995</b></p>
+            <div class="btn-field">
+                <button type="submit" id="signupBtn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+        <a href="https://www.amazon.in/Fire-Boltt-Smartwatch-Bluetooth-Calling-Assistance/dp/B09YV3K34W?&linkCode=sl1&tag=expressdeal07-21&linkId=f6dfef47f30372ef2cde4d06bbe51b2d&language=en_IN&ref_=as_li_ss_tl">
+            <img class="product-image" src="p6.jpeg" alt="Product 2"></a>
+            <h3>Fire-Boltt Artillery smartwatch</h3>
+            <p>They both are a great combination of style and function. Some of the best smartwatch brands are Apple, Fire Boltt, Noise, Samsung, etc.</p>
+            <p><b>Rs. 1,499</b></p>
+            <div class="btn-field">
+                <button type="submit" id="signupBtn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+        <a href="https://www.amazon.in/Samsung-Bluetooth-Graphite-Compatible-Android/dp/B0B99RZ38G/ref=asc_df_B0B99RZ38G/?tag=googleshopdes-21&linkCode=df0&hvadid=583274368274&hvpos=&hvnetw=g&hvrand=11878996666089898578&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9299869&hvtargid=pla-1730140667883&psc=1&mcid=faedcb6eefd63a4486965ca1aa138887&gclid=CjwKCAiAs6-sBhBmEiwA1Nl8s3Il6Oz2F-zGdIl4AlIdBjmKn2KIn7tnLO0EsnDT5TJ1fyx6lXyb-xoCxf0QAvD_BwE">
+            <img class="product-image" src="p7.webp" alt="Product 2"></a>
+            <h3>Samsung smartwatch</h3>
+            <p>Samsung's latest smartwatch, the Galaxy Watch 6 Classic, was unveiled along with the Galaxy Watch 6 at its 2023 Unpacked event this summer.</p>
+            <p><b>Rs. 3,999</b></p>
+            <div class="btn-field">
+                <button type="submit" id="signupBtn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+        <a href="https://www.amazon.in/Samsung-Bluetooth-Sapphire-Compatible-Android/dp/B0B99Q76XT?th=1&linkCode=sl1&tag=expressdeal07-21&linkId=d77a5296e56db668abe4a46de48c0ebe&language=en_IN&ref_=as_li_ss_tl">
+            <img class="product-image" src="p8.jpeg" alt="Product 2"></a>
+            <h3>Samsung Galaxy Watch4</h3>
+            <p>The Samsung Galaxy Watch6 LTE is a top-tier smartwatch known for its sleek design and extensive feature set.</p>
+            <p><b>Rs. 30,999</b></p>
+            <div class="btn-field">
+                <button type="submit" id="signupBtn">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

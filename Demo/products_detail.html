@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: 'poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f0f0;
+        }
+
+        .page-content {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-page {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product-desc {
+            display: flex;
+            align-items: center;
+        }
+
+        .product-desc-image {
+            margin-right: 20px;
+        }
+
+        .product-desc-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-details-info {
+            max-width: 600px;
+        }
+
+        .product-desc-details,
+        .product-details-desc {
+            margin-top: 20px;
+        }
+
+        .btn-back {
+            padding: 10px 20px;
+            background-color: #3c00a0;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-content">
+        <div class="product-page">
+            <div class="product-desc">
+                <div class="product-desc-image">
+                    <img id="productImage" src="" width="280" height="320" alt="Product Image">
+                </div>
+                <div class="product-details-info">
+                    <h1 id="productName"></h1>
+                    <h2 style="color: green;" id="productPrice"></h2>
+                    <div class="product-desc-details">
+                        <h3>Product Details</h3>
+                        <p class="product-desc-p" id="productSize"></p>
+                        <p class="product-desc-p" id="productCamera"></p>
+                        <p class="product-desc-p"><b>Model Number:</b> <span id="productModelNo"></span></p>
+                        <p class="product-desc-p"><b>Model Name:</b> <span id="productModelName"></span></p>
+                        <p class="product-desc-p"><b>ROM:</b> <span id="productROM"></span> GB</p>
+                    </div>
+                    <div class="product-details-desc">
+                        <h3>Product Description</h3>
+                        <p class="product-desc-p" id="productDesc"></p>
+                    </div>
+                    <a href="/products_detail.html" class="btn-back">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sample product data
+        const productData = {
+            image: "p1.jpg",
+            name: "Apple Watch",
+            price: "$19.99",
+            size: "One Size",
+            camera: "12 MP",
+            modelNo: "AW123",
+            modelName: "Series 9",
+            ROM: "32",
+            desc: "The Apple Watch Series 9 is a versatile smartwatch with a Starlight Aluminum Case and sports loop."
+        };
+
+        // Update HTML content with product data
+        document.getElementById("productImage").src = productData.image;
+        document.getElementById("productName").textContent = productData.name;
+        document.getElementById("productPrice").textContent = productData.price;
+        document.getElementById("productSize").textContent = `Size: ${productData.size}`;
+        document.getElementById("productCamera").textContent = `Camera: ${productData.camera}`;
+        document.getElementById("productModelNo").textContent = productData.modelNo;
+        document.getElementById("productModelName").textContent = productData.modelName;
+        document.getElementById("productROM").textContent = productData.ROM;
+        document.getElementById("productDesc").textContent = productData.desc;
+    </script>
+
+</body>
+</html>
